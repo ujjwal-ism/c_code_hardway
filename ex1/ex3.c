@@ -6,6 +6,7 @@ int main(){
 
 	printf("I am %d years old.\n",age );
 	printf("I am %d inches tall.\n",height );
+	printf("it works\n");
 
 	return 0;
 }
