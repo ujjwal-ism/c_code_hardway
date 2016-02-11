@@ -22,6 +22,15 @@ int main(int argc,char *argv[]){
 		printf("State %d: %s\n",i,states[i] );
 		i++;
 	}
+    i=0;
+	while(i<num_states){
+        states[i]=argv[i];
+        i++;
+	}
+	while(i<num_states){
+		printf("State %d: %s\n",i,states[i] );
+		i++;
+	}
 	
 	return 0;
 }
