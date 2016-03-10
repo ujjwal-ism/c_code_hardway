@@ -24,7 +24,7 @@ struct Person *Person_Create(char *name,int age,int height,int weight){
 	return who;
 }
 
-void Person_destroy(struct Person *who){
+void Person_destroy(struct Person *who){// this 'who' is different
 
 	assert(who!=NULL);
 
@@ -32,7 +32,7 @@ void Person_destroy(struct Person *who){
 	free (who);
 }
 
-void Person_print(struct Person *who){
+void Person_print(struct Person *who){//this 'who' is also different
 
 	printf("Name : %s\n",who->name );
 	printf("\t Age : %d\n",who->age );
@@ -55,8 +55,9 @@ int main(int argc, char const *argv[])
     Person_print(abhi);
 
     //destroy both of them :----
+    /*
     Person_destroy(ujj);
-    Person_destroy(abhi);
+    Person_destroy(abhi);*/
 
 	return 0;
 }
