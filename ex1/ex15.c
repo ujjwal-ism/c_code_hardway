@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(int argc,char *argv[]){
 
@@ -6,7 +6,7 @@ int main(int argc,char *argv[]){
 	int ages[]={12,45,34,56,67};
 	char *names[]={"Alan","chris","kadwa","kancha","Shubham"};
 
-	//find the size of ages
+	//find the size of ages.....elegant way.
 	int count =sizeof(ages)/sizeof(int);
 	int i=0;
 
@@ -14,7 +14,7 @@ int main(int argc,char *argv[]){
 		printf("%s is %d years old.\n",names[i],ages[i] );
 	}
 
-	printf("-----\n");
+	printf("------\n");
 
 	//set the pointers to the start of the array.
 	int *cur_ages=ages;
@@ -33,7 +33,7 @@ int main(int argc,char *argv[]){
 		printf("%s is %d years old.\n",cur_names[i],cur_ages[i] );
 	}
 
-	printf("-------\n");
+	printf("------\n");
 
 	//fourth way of using pointers....complex....doesn't get it yet.
 	for(cur_names = names, cur_ages = ages;
@@ -43,6 +43,7 @@ int main(int argc,char *argv[]){
         printf("%s lived %d years so far.\n",
                 *cur_names, *cur_ages);
     }
+    printf("%s\n", );
 
     return 0;
 }
