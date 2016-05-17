@@ -1,6 +1,7 @@
 #include "dbg.h"
 #include <stdio.h>
 #include <stdlib.h>
+#define NDEBUG
 
 void test_debug(){
 	// Notice you don't need the \n
